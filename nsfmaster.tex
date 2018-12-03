@@ -1,0 +1,114 @@
+
+%%%%%%%%% MASTER -- compiles the 4 sections
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0cm,headsep=0cm}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{titlesec}
+\usepackage{indentfirst}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{multirow}
+\usepackage{subfig}
+\setcounter{secnumdepth}{5}
+\usepackage{blindtext}
+\usepackage{color}
+\usepackage{comment}
+
+%%This is for comments%%%
+\newcommand{\tomi}[1]{\textbf{\textcolor{green}{#1}}}
+\newcommand{\liting}[1]{\textbf{\textcolor{red}{#1}}}
+\newcommand{\changliu}[1]{\textbf{\textcolor{blue}{#1}}}
+\newcommand{\yujiao}[1]{\textbf{\textcolor{purple}{#1}}}
+\newcommand{\yongxiang}[1]{\textbf{\textcolor{yellow}{#1}}}
+\newcommand{\weiye}[1]{\textbf{\textcolor{cyan}{#1}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\pagestyle{fancy}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+%\setlength{\textwidth}{6.5in}     %%                                   %%
+%\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+%\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+%\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+%\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+%\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+%\setlength{\headsep}{0in}         %%                                   %%
+%\setlength{\footskip}{.5in}       %%                                   %%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+%\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\contentsname}{ }
+%\renewcommand{\theparagraph}{\arabic{paragraph}}
+\renewcommand{\arraystretch}{1.2}
+\newcommand\invisiblesection[1]{%
+  \refstepcounter{section}%
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
+  \sectionmark{#1}}
+
+\titlespacing*{\section}
+{0pt}{10pt}{0pt}
+\titlespacing*{\subsection}
+{0pt}{7pt}{0pt}
+\titlespacing*{\subsubsection}
+{0pt}{3pt}{0pt}
+\titlespacing*{\paragraph}
+{0pt}{2pt}{0pt}
+\titlespacing*{\subparagraph}
+{15pt}{1pt}{0pt}
+
+
+%\titleformat*{\paragraph}{\slshapce}
+
+\bibliographystyle{IEEEtran}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+%\includeonly{NSFsumm}
+
+\begin{document}
+%%%%%%%%%%%%% Project Summary max 1 page must include Intellectual Merit and Broader Impact) %%%%%%%%%%%%%%%%%%%
+%\lhead{NRI: Safe and Efficient Robot Collaboration System for Next Generation Intelligent Industrial Co-Robots\\%Control for Safety in Human Robot Co-existing Factories\\
+%PI: Masayoshi Tomizuka. Institution: UC, Berkeley}
+\setcounter{page}{0}
+
+\tableofcontents
+
+\setcounter{page}{1}
+
+%\fontdimen2\font=2.1pt
+%\include{nsfsumm}% Max 1 page
+%%%%%%%%%%%%% Project Description max 15 pages (usually) Must include discussion of recent Prior (last 5 years) %%%%%%%%%%%%%%%%%%%
+%\setcounter{page}{1}
+\include{nsfdesc}% 
+%%%%%%%%%%%%%% References no page limit %%%%%%%%%%%%%%%%%%%
+\setcounter{page}{1}
+\include{nsfref}
+%%%%%%%%%%%%%% Postdoc Mentoring Plan%%%%%%%%%%%%%%%%%%%
+%\setcounter{page}{1}
+%\include{nsfpdoc}
+%%%%%%%%%%%%%% Biosketch  Max two pages per person%%%%%%%%%%%%%%%%%%%
+%\setcounter{page}{1}
+%%\include{nsfpersonnel}
+%\include{nsffacilities}
+%% Supplementary Documents
+%%%%%%%%%%%%% Data Management 1 page REQUIRED
+%\setcounter{page}{1}
+%\include{nsfdataman}
+%%%%%%%%%%REU Description if requesting REU - 3 page max
+%\setcounter{page}{1}
+%\include{nsfhuman}%
+%\bibliography{nsf-nri}
+\end{document}
