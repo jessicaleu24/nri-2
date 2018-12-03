@@ -1,0 +1,117 @@
+\setcounter{page}{1}
+\renewcommand{\thepage}{\arabic{page}}
+%\required{Supplementary Documentation}
+\invisiblesection{Data Management Plan}
+
+~
+\vspace{-15pt}
+\begin{center}
+\Large{\textbf{Data Management Plan}}
+\end{center}
+% Maximum of 2 pages
+%------------------------------
+
+% This supplement should describe how the proposal will conform to NSF policy on
+% the dissemination and sharing of research results and may include:
+% 
+% 1. The types of data, samples, physical collections, software, curriculum
+%    materials, and other materials to be produced in the course of the project;
+% 
+% 2. The standards to be used for data and metadata format and content (where
+%    existing standards are absent or deemed inadequate, this should be documented
+%    along with any proposed solutions or remedies);
+% 
+% 3. Policies for access and sharing including provisions for appropriate
+% protection   of privacy, confidentiality, security, intellectual property, or
+% other rights or   requirements;
+% 
+% 4. Policies and provisions for re-use, re-distribution, and the production of
+%    derivatives; and
+% 
+% 5. Plans for archiving data, samples, and other research products, and for
+%    preservation of access to them.
+% 
+% A valid Data Management Plan may include only the statement that no detailed
+% plan is needed, as long as the statement is accompanied by a clear
+% justification. Proposers who feel that the plan cannot fit within the supplement
+% limit of two pages may use part of the 15-page Project Description for
+% additional data management information. Proposers are advised that the Data
+% Management Plan may not be used to circumvent the 15-page Project Description
+% limitation.
+
+\subsection{Types of Data}
+In this project, the following types of data are expected to be generated:
+
+\subsubsection*{(1) Data to Be Collected and the Cognition Model Library in T1.1}
+\begin{itemize} \itemsep0pt \parskip0pt \parsep0pt
+\item Trajectory of human motion in different scenarios and tasks;
+\item Identified human behavior types and the associated features;
+\item Identified human behavioral models;
+\end{itemize}
+\vspace{-10pt}
+
+
+\subsubsection*{(2) Data to Be Collected and the Motion Skill Library in T2.1}
+\begin{itemize} \itemsep0pt \parskip0pt \parsep0pt
+\item Force and motion trajectory of human demonstrations in different scenarios and tasks;
+\item Identified motion skill models and the associated features;
+\end{itemize}
+\vspace{-10pt}
+
+\subsubsection*{(3) Algorithms in Processing the Data in T1.1 and T2.1}
+\begin{itemize} \itemsep0pt \parskip0pt \parsep0pt
+\item C++/Matlab/Python source code of the classification algorithm of human behavior and the model extraction algorithm;
+\item C++/Matlab/Python source code of the supervised learning algorithm of skill model training;
+\end{itemize}
+\vspace{-10pt}
+
+\subsubsection*{(4) Algorithms to Be Developed in T1.2, T2.2 and T3.1}
+
+\begin{itemize} \itemsep0pt \parskip0pt \parsep0pt
+\item C++/Matlab/Python source code of the online learning algorithm of stochastic time-varying systems;
+\item C++/Matlab/Python source code of the online task planning algorithm;
+\item C++/Matlab/Python source code of the efficiency controller;
+\item C++/Matlab/Python source code of the safety controller;
+\end{itemize}
+
+\vspace{-10pt}
+
+\subsubsection*{(5) The Evaluation Platforms to Be Developed in T4.1}
+
+\begin{itemize} \itemsep0pt \parskip0pt \parsep0pt
+\item Source code of Platform 1 to Platform 5;
+\item The executable software;
+\item User manual;
+\end{itemize}
+
+\vspace{-10pt}
+
+
+\subsubsection*{(6) Documents and Others}
+
+\begin{itemize} \itemsep0pt \parskip0pt \parsep0pt
+\item Questionnaires;
+\item Curriculum materials from courses taught, and talks given at seminars / tutorials / etc.
+\item Publications intended for public dissemination;
+\end{itemize}
+
+\subsection{Standards}
+Standard commercially available hardware (e.g., cameras, computers, displays, sensors) will be used in the study, as well as standard commercially available operating systems, such as Windows, MAC OS and Linux distributions. The source code will be written in Matlab, C/C++, and Python with support from some of the Open Source libraries (e.g. OpenCV). For communication purposes we will use TCP/IP.
+
+Data will be stored in standard formats provided by the equipment manufacturers. (1) The algorithm related data will be stored in ASCII text format. (2) The images will be stored in standard formats, such as PGM and PPM in standard resolutions (VGA or QVGA). (3) Motion trajectories will be stored in ASCII text format or custom documented binary formats for efficiency. (4) For the data compression, ZIP compression algorithms will be used. (5) The documentation for the framework will be stored in DOC, TEX format and distributed in standard PDF format.
+
+
+\subsection{Policies for Access}
+All study protocols will be approved by the University Institutional Review Board (IRB) prior to performance, and all research guidelines and rules will be strictly adhered to for both privacy and protection of human subjects and data for research.
+
+The access to the data will be secured via SSH protocols and individual access will be given to the participating researchers. The server for the source code will not hold any human subject information. Any information on subjects will be anonymized and stored on computers with password protection. Any information on subjects that could be linked to individuals will be encrypted (e.g. using AES-256 algorithm). The human behavioral data (anonymized) will be provided to other researchers for academic use to evaluate their learning and control algorithms. Registrations will be required.
+
+
+\subsection{Policies for Re-use and Re-distribution}
+The source code data will be handled by academic licenses and provided free for non-profit (academic) software use, reserving rights of UC Berkeley for commercial use. Users will be required to register. The software copyright notice will be as follows: http://ipira.berkeley.edu/software-copyright-notice-and-disclaimer. Data and programs will be shared in a timely manner (typically within a few months of the relevant paper being published). Curriculum materials will be made available in a timely manner at the PI's web pages or course web pages, as permitted by UC Berkeley, with no restrictions for re-use (provided that authors are acknowledged).
+
+
+\subsection{Plans for Dissemination and Archiving the Data}
+For archiving and storage of source code and data, we have a dedicated experimental PC which is regularly backed up to an external device/storage.
+The dissemination of the stable version of software will proceed after the publication and protection of IP from each partner and publication. The human behavioral data will also be shared with the academic community after the publications upon the permission of the subject.
+We believe it is important to maintain data access along the life of the project. We will provide data distributions based on a long-term web host supported by UC Berkeley. We will use campus-provided services for backups of the data.
